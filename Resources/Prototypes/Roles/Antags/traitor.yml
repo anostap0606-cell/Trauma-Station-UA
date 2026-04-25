@@ -10,6 +10,26 @@
     time: 1h
   creditImage: /Textures/_Trauma/EndCredits/Antags/traitor.png # Trauma
 
+- type: antagSpecifier
+  abstract: true
+  parent: RestrictedAntag
+  id: BaseTraitor
+  # <Trauma>
+  blacklist:
+    components:
+    - AntagImmune
+    - Changeling
+  # </Trauma>
+
+- type: antagSpecifier
+  parent: BaseTraitor
+  id: Traitor
+  prefRoles:
+  - Traitor
+  # Trauma - removed blacklist copy, its inherited
+  mindRoles:
+  - MindRoleTraitor
+
 - type: antag
   id: TraitorSleeper
   name: roles-antag-syndicate-agent-sleeper-name
@@ -20,6 +40,23 @@
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 1h
+
+- type: antagSpecifier
+  parent: BaseTraitor
+  id: TraitorSleeper
+  prefRoles:
+  - TraitorSleeper
+  mindRoles:
+  - MindRoleTraitorSleeper
+
+- type: antagSpecifier
+  parent: BaseTraitor
+  id: TraitorReinforcement
+  prefRoles:
+  - Traitor
+  - GenericTeamAntagonist # Matters for Antag bans.
+  mindRoles:
+  - MindRoleTraitorReinforcement
 
 # Syndicate Operative Outfit - Monkey
 - type: startingGear

@@ -3,4 +3,13 @@
   name: roles-antag-xenomorph-name
   antagonist: true
   objective: roles-antag-xenomorph-objective
-  creditImage: /Textures/_Trauma/EndCredits/Antags/xenos.png # Trauma
+  creditImage: /Textures/_Trauma/EndCredits/Antags/xenos.png
+
+- type: antagSpecifier
+  id: Xenomorph
+  prefRoles: [ XenomorphsInfestationRoundstart ]
+  spawnerPrototype: SpawnPointGhostXenomorph
+  mindRoles: [ MindRoleXenomorph ]
+  briefing:
+    text: xenomorph-role-greeting
+    color: "#8c3986"

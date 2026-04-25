@@ -8,3 +8,26 @@
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 36000
+
+- type: antagSpecifier
+  id: Wraith
+  prefRoles: [ WraithRoundstart ]
+  spawnerPrototype: SpawnPointGhostWraithRoundstart
+  mindRoles: [ MindRoleGhostRoleSoloAntagonist ]
+  briefing:
+    text: wraith-role-greeting
+    sound: /Audio/_Goobstation/Wraith/Ambience/Void_Calls.ogg
+  components:
+  - type: RandomMetadata
+    nameSegments:
+    - NamesWraith
+    - NamesWraithTitle
+    nameFormat: name-format-wraith
+  - type: Banishment
+    lives: 0
+    popup: wraith-banishment
+
+- type: antagSpecifier
+  parent: Wraith
+  id: WraithMidround
+  spawnerPrototype: SpawnPointGhostWraith

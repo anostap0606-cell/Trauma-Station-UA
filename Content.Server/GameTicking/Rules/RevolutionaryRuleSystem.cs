@@ -3,8 +3,8 @@ using Content.Goobstation.Shared.Revolutionary;
 using Content.Server.Antag.Components;
 using Content.Server.Chat.Systems;
 using Content.Server.Communications;
-using System.Linq;
 // </Trauma>
+using System.Linq;
 using Content.Server.Administration.Logs;
 using Content.Server.Antag;
 using Content.Server.EUI;
@@ -142,7 +142,7 @@ public sealed partial class RevolutionaryRuleSystem : GameRuleSystem<Revolutiona
         var index = (commandLost ? 1 : 0) | (revsLost ? 2 : 0);
         args.AddLine(Loc.GetString(Outcomes[index]));
 
-        var sessionData = _antag.GetAntagIdentifiers(uid);
+        var sessionData = _antag.GetAntagIdentifiers(uid).ToList();
         args.AddLine(Loc.GetString("rev-headrev-count", ("initialCount", sessionData.Count)));
         foreach (var (mind, data, name) in sessionData)
         {

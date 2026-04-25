@@ -231,7 +231,7 @@
     reflective: Magic
 
 - type: entity
-  id: Inkofimaginination
+  id: InkOfImaginination
   name: Ink of imaginination
   description: Call to the great minimal to bring forth true existence... A closing truth
   parent: BaseItem
