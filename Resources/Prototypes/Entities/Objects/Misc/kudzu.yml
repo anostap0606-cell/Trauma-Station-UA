@@ -50,6 +50,7 @@
         - MidImpassable
   - type: Damageable
     damageModifierSet: Wood
+  - type: Injurable
   - type: Destructible
     thresholds:
     - trigger:
@@ -209,6 +210,7 @@
         layer:
         - MidImpassable
   - type: Damageable
+  - type: Injurable
   - type: Destructible
     thresholds:
     - trigger:
