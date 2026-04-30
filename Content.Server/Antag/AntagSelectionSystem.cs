@@ -20,6 +20,7 @@ using Content.Shared.Administration.Logs;
 using Content.Shared.Antag;
 using Content.Shared.Clothing;
 using Content.Shared.Database;
+using Content.Shared.Follower;
 using Content.Shared.GameTicking;
 using Content.Shared.GameTicking.Components;
 using Content.Shared.Mind;
@@ -64,6 +65,7 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
     [Dependency] private ArrivalsSystem _arrivals = default!;
     [Dependency] private AudioSystem _audio = default!;
     [Dependency] private EntityWhitelistSystem _whitelist = default!;
+    [Dependency] private FollowerSystem _follower = default!;
     [Dependency] private GhostRoleSystem _ghostRole = default!;
     [Dependency] private JobSystem _jobs = default!;
     [Dependency] private LoadoutSystem _loadout = default!;
@@ -170,6 +172,10 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
         PreSelectSession((rule, select), def, args.Player);
         InitializeAntag((rule, select), def, uid.Value, args.Player);
         args.TookRole = true;
+
+        // Move ghosts that were watching the raffle on the spawner over to the freshly spawned antag.
+        _follower.TransferFollowers(ent.Owner, uid.Value);
+
         _ghostRole.UnregisterGhostRole((ent, Comp<GhostRoleComponent>(ent)));
     }
 
