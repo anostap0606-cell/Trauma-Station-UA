@@ -146,6 +146,11 @@ namespace Content.Client.Cargo.BUI
                 return;
 
             _menu.ProductCatalogue = cState.Products;
+            _menu.ShuttleCapacityLabel.Text = Loc.GetString(
+                "cargo-console-menu-order-capacity-number",
+                ("count", OrderCount),
+                ("capacity", OrderCapacity)
+            );
 
             _menu?.UpdateStation(station);
             Populate(cState.Orders);
