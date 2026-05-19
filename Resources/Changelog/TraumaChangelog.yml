@@ -8707,3 +8707,10 @@ Entries:
   id: 995
   time: '2026-05-19T11:48:14.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/2692
+- author: NoElkaTheGod
+  changes:
+  - type: Add
+    message: Added a new map, Freighter Transport (also known as kilotrain).
+  id: 996
+  time: '2026-05-19T15:44:52.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2567
