@@ -9476,3 +9476,10 @@ Entries:
   id: 1075
   time: '2026-06-01T11:17:41.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/2965
+- author: deltanedas
+  changes:
+  - type: Tweak
+    message: Renamed some minor demon names to be less stupid.
+  id: 1076
+  time: '2026-06-01T11:28:04.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2966
