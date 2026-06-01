@@ -9555,3 +9555,10 @@ Entries:
   id: 1084
   time: '2026-06-01T19:38:26.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/2975
+- author: deltanedas
+  changes:
+  - type: Tweak
+    message: Making blood vials now needs wood instead of using a screwdriver.
+  id: 1085
+  time: '2026-06-01T20:03:08.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/2976
