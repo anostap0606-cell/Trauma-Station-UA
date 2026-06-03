@@ -9685,3 +9685,12 @@ Entries:
   id: 1096
   time: '2026-06-03T18:08:07.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/2847
+- author: TechnicFighter
+  changes:
+  - type: Fix
+    message: >-
+      Fixed turrets being useless. They can't be cheesed by girders or lockers
+      anymore
+  id: 1097
+  time: '2026-06-03T18:11:35.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3015
