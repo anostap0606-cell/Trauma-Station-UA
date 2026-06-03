@@ -9694,3 +9694,10 @@ Entries:
   id: 1097
   time: '2026-06-03T18:11:35.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/3015
+- author: assripper.
+  changes:
+  - type: Tweak
+    message: xenomorph prying has been improved (its faster and makes a noise now)
+  id: 1098
+  time: '2026-06-03T18:18:27.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3020
