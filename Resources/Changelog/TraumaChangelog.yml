@@ -9777,3 +9777,10 @@ Entries:
   id: 1108
   time: '2026-06-05T10:11:08.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/3051
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed outcast demon not looking like a vox when wearing clothes.
+  id: 1109
+  time: '2026-06-05T10:19:48.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3052
