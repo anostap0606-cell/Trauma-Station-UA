@@ -9770,3 +9770,10 @@ Entries:
   id: 1107
   time: '2026-06-05T09:34:02.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/3048
+- author: deltanedas
+  changes:
+  - type: Remove
+    message: Removed skill gain from crafting things.
+  id: 1108
+  time: '2026-06-05T10:11:08.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3051
