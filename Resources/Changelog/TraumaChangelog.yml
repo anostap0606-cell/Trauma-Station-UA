@@ -9763,3 +9763,10 @@ Entries:
   id: 1106
   time: '2026-06-05T09:17:31.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/3046
+- author: deltanedas
+  changes:
+  - type: Tweak
+    message: Changed firebomb to create a tile fire and not nugget people.
+  id: 1107
+  time: '2026-06-05T09:34:02.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/3048
